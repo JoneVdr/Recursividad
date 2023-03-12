@@ -20,16 +20,15 @@
 #Puede encontrar una solución estudiada de este ejercicio en los complementos disponibles para descargar desde la página Información.
 
 #Solución
-import unicode
+frase = input("Introduce una frase: ")
 def polindromo(frase):
-    frase = input("Introduce una frase: ")
     frase = frase.lower()
-    frase = unicode(frase)
-
-    if frase == frase[::-1]:
-        return "Es un polindromo"
+    while True:
+        frase == frase[::-1]
+        print("Es un polindromo")
     else:
-        return "No es un polindromo"
-        return frase
+        print("No es un polindromo")
+        break
+
 
 print(polindromo(frase))
